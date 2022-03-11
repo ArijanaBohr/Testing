@@ -6,7 +6,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-matplotlib.use('Agg')
+plt.use('Agg')
 
 # In[18]:
 
