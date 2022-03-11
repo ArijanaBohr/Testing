@@ -106,7 +106,7 @@ test = np.array([[0],[1]])
 predict(w1,w2,test)
 test = np.array([[1],[1]])
 predict(w1,w2,test)
-export DISPLAY=0.0
+
 
 # In[ ]:
 
