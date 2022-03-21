@@ -19,7 +19,8 @@ import time
 
 import numpy as np
 from PIL import Image
-import tensorflow as tf
+#import tensorflow as tf
+import tflite_runtime.interpreter as tflite
 
 
 def load_labels(filename):
