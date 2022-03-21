@@ -19,8 +19,7 @@ import time
 
 import numpy as np
 from PIL import Image
-#import tensorflow as tf
-import tflite_runtime.interpreter as tflite
+import tensorflow as tf
 
 
 def load_labels(filename):
@@ -86,7 +85,7 @@ if __name__ == '__main__':
         tflite.load_delegate(args.ext_delegate, ext_delegate_options)
     ]
 
-  interpreter = tflite.Interpreter(
+  interpreter = tf.lite.Interpreter(
       model_path=args.model_file,
       experimental_delegates=ext_delegate,
       num_threads=args.num_threads)
