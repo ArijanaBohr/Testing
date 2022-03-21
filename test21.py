@@ -1,2 +1,3 @@
+#say something
 import ctypes
-   print(ctypes.sizeof(ctypes.c_voidp))
+print(ctypes.sizeof(ctypes.c_voidp))
