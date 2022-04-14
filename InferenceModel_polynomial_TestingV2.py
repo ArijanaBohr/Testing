@@ -7,10 +7,10 @@
 #Loading the inference model
 
 import numpy as np
-import tensorflow as tf
+import tflite_runtime.interpreter as tflite
 
 # Load TFLite model and allocate tensors.
-interpreter = tf.lite.Interpreter(model_path="saved_polynomial_TestingV2tflite_keras.tflite")
+interpreter = tflite.Interpreter(model_path="saved_polynomial_TestingV2tflite_keras.tflite")
 interpreter.allocate_tensors()
 
 # Get input and output tensors.
