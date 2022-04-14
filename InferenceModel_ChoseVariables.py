@@ -40,7 +40,7 @@ def run_inference_polynomial_TestingV2(topredict):
 #example: run_inference_polynomial_TestingV2(8.0)
 if __name__ == '__main__':
     # Map command line arguments to function arguments.
-    do_something(*sys.argv[1:])
+    run_inference_polynomial_TestingV2(*sys.argv[1:])
 
 # In[ ]:
 
