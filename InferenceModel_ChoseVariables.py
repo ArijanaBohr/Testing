@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[1]:
-
+import sys
 
 def run_inference_polynomial_TestingV2(topredict):
     import numpy as np
@@ -38,7 +38,9 @@ def run_inference_polynomial_TestingV2(topredict):
     output_data = interpreter.get_tensor(output_details[0]['index'])
     print("input data: " , input_data,"output data:" , output_data)
 #example: run_inference_polynomial_TestingV2(8.0)
-
+if __name__ == '__main__':
+    # Map command line arguments to function arguments.
+    do_something(*sys.argv[1:])
 
 # In[ ]:
 
