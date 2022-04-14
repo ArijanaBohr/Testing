@@ -27,7 +27,7 @@ def run_inference_polynomial_TestingV2(topredict):
 
     # Test model on random input data.
     input_shape = input_details[0]['shape']
-    #input_data = np.array(np.random.random_sample(input_shape), dtype=np.float32)
+    #input_data = np.array(np.random.random_sample(input_shape), dtype)
     input_data = np.array(np.random.random_sample(input_shape)*0 + topredict, dtype)
     interpreter.set_tensor(input_details[0]['index'], input_data)
     #index: The tensor index in the interpreter.
