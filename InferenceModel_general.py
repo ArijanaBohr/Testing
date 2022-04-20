@@ -24,8 +24,6 @@ def run_inference_polynomial_TestingV2(model_path, topredict):
     output_details = interpreter.get_output_details() # Gets model output tensor details.
     #Returns A list in which each item is a dictionary with details
     # about an output tensor. The dictionary contains the same fields as described for get_input_details().
-
-    # Test model on random input data.
     input_shape = input_details[0]['shape']
     #input_data = np.array(np.random.random_sample(input_shape), dtype)
     input_data = np.array(np.random.random_sample(input_shape)*0 + float(topredict), dtype=np.float32)
